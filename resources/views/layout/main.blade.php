@@ -8,7 +8,7 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
-    <title>Template</title>
+    <title>Laravel Model Controller</title>
 </head>
 <body>
     @include('partials.header')

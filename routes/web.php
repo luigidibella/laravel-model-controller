@@ -15,7 +15,11 @@ use App\Http\Controllers\Guest\PageController;
 
 Route::get('/',[PageController::class, 'index'])->name('home');
 
-Route::get('/movies', [PageController::class, 'movies'])->name('movies');
+Route::get('/title', [PageController::class, 'title'])->name('title');
+
+Route::get('/date', [PageController::class, 'date'])->name('date');
+
+Route::get('/vote', [PageController::class, 'vote'])->name('vote');
 
 
 
