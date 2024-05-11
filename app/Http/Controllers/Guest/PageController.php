@@ -18,24 +18,30 @@ class PageController extends Controller
 
     public function title(){
 
-        $movies = Movie::all()
-            ->sortBy('title');
+        /* $movies = Movie::all()
+            ->sortBy('title'); */
+
+        $movies = Movie::orderBy('title')->get();
 
         return view('title', compact('movies'));
     }
 
     public function date(){
 
-        $movies = Movie::all()
-            ->sortBy('date');
+        /* $movies = Movie::all()
+            ->sortBy('date'); */
+
+        $movies = Movie::orderBy('date')->get();
 
         return view('date', compact('movies'));
     }
 
     public function vote(){
 
-        $movies = Movie::all()
-            ->sortByDesc('vote');
+        /* $movies = Movie::all()
+            ->sortByDesc('vote'); */
+
+        $movies = Movie::orderByDesc('vote')->get();
 
         return view('vote', compact('movies'));
     }
