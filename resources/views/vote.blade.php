@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container my-5">
-    <h1>Data di uscita</h1>
+    <h1>Classifica</h1>
     <table class="table text-capitalize">
         <thead>
           <tr>
