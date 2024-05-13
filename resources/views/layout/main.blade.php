@@ -8,7 +8,7 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
-    <title>Laravel Model Controller</title>
+    <title>Movie @yield('title')</title>
 </head>
 <body>
     @include('partials.header')

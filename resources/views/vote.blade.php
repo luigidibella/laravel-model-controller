@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@section('title')
+    | Vote
+@endsection
+
 @section('content')
 
 <div class="container my-5">
